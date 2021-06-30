@@ -1,3 +1,5 @@
+// Classes - Basic
+
 class Car {
     brand;
     model;
@@ -85,3 +87,20 @@ var person3 = new Person("Dani", "zee", "graphic designer", "25", ["german", "en
 document.getElementById("newPerson").innerHTML += person3.printProp();
 document.getElementById("newPerson").innerHTML += person2.printProp();
 document.getElementById("newPerson").innerHTML += person1.printProp();
+
+
+
+// Classes - Intermediate
+
+class NewVehicle extends Car {
+    numbWheels;
+
+    constructor (a, b, c, d, e, f, g) {
+        super(a, b, c, d, e, f);
+        this.numbWheels = g;
+    }
+} 
+
+var motorCycle = new NewVehicle("motorcycle", "IDK", "moto", "red", 2018, "none", 4);
+
+console.table(motorCycle);
