@@ -105,3 +105,53 @@ var animal3 = {
 document.getElementById("newAnimal").innerHTML += animal1.printProp();
 document.getElementById("newAnimal").innerHTML += animal2.printProp();
 document.getElementById("newAnimal").innerHTML += animal3.printProp();
+
+
+var person1 = {
+    name : "Roberta",
+    gender: "she",
+    profession: "web developer",
+    age: "28",
+    languages: ["english", "spanish", "german"],
+    
+
+    printProp: function () {
+
+        return `<div class="card" style="width: 18rem;"><div class="card-body"><h5 class="card-title">Our staff</h5><p class="card-text" id="cardText">` + `This is  ${this.name}, ${this.gender} is ${this.age} years old and is a ${this.profession}.` +`</p><a href="#" class="btn btn-primary">Learn More</a></div></div>`;
+    }
+}
+
+
+var person2 = {
+    name : "Yumi",
+    gender: "she",
+    profession: "marketing manager",
+    age: "30",
+    languages: ["german", "english", "japanese"],
+    
+
+    printProp: function () {
+
+        return `<div class="card" style="width: 18rem;"><div class="card-body"><h5 class="card-title">Our staff</h5><p class="card-text" id="cardText">` + `This is  ${this.name}, ${this.gender} is ${this.age} years old and is a ${this.profession}.` +`</p><a href="#" class="btn btn-primary">Learn More</a></div></div>`;
+    }
+}
+
+
+var person3 = {
+    name : "Dani",
+    gender: "zee",
+    profession: "graphic designer",
+    age: "25",
+    languages: ["german", "english"],
+    
+
+    printProp: function () {
+
+        return `<div class="card" style="width: 18rem;"><div class="card-body"><h5 class="card-title">Our staff</h5><p class="card-text" id="cardText">` + `This is  ${this.name}, ${this.gender} is ${this.age} years old and is a ${this.profession}.` +`</p><a href="#" class="btn btn-primary">Learn More</a></div></div>`;
+    }
+}
+
+
+document.getElementById("newPerson").innerHTML += person1.printProp();
+document.getElementById("newPerson").innerHTML += person2.printProp();
+document.getElementById("newPerson").innerHTML += person3.printProp();
